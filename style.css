@@ -3,25 +3,68 @@ width:"320";
 height:"240";
 }
 
-#top_1 {
+#top_1, #top_2 {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    
+    font-size: smaller;   
+}
+
+#top_2 h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #topbar{
     margin:0;
+    border-bottom: double;
 }
 
 .hamburger {
     transform: rotate(90deg);
+    font-weight:bold;
 }
 
 #top_1 ul{
     display:flex;
     list-style: none;
 }
+
+#top_1 ul li {
+    margin-right:1em;
+}
+
+#top_3 ul{
+    display:flex;
+    list-style: none;
+    font-size: small;
+}
+
+#border-left{
+    border-left: solid gainsboro;
+}
+
+#top_3 ul li{
+margin-right: 1em;
+}
+
+#top_3 {
+    border-top: solid gainsboro;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#weather{
+    display:flex;
+}
+
+#weather p{
+    margin-right: 1em;
+}
+
+#top_2 ul{
+    list-style: none;
+}
+
 #top_1 > div{
     display: flex;
 }
@@ -44,11 +87,30 @@ button{
 }
 
 
-#top_1 ul li {
-    margin-right:1em;
-}
-
 a:link, a:visited, a:hover{
     text-decoration: none;
     color:black
+}
+
+#date{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body h1,h2,h3{
+    font-family:georgia,'times new roman',times,serif;
+}
+
+#principal-grid p{
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    color:grey;
+}
+
+.grid-news{
+    border-bottom: solid black;
+}
+
+#principal-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
