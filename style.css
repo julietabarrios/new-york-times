@@ -1,5 +1,8 @@
+img{
+    width:100%;
+}
 video{
-width:"320";
+width: 20em;
 height:"240";
 }
 
@@ -86,7 +89,6 @@ button{
     margin-right:7px;
 }
 
-
 a:link, a:visited, a:hover{
     text-decoration: none;
     color:black
@@ -111,6 +113,89 @@ body h1,h2,h3{
 }
 
 #principal-grid{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    column-gap: 3em;
+}
+
+.grid-news{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40,40,20;
+    column-gap: 2em;
+}
+
+.grid-news img{
+    grid-row-end: span 2;
+    align-self:center;
+}
+
+.img-right{
+    display: flex;
+}
+
+.img-right, .alexander{
+    grid-row-end: span 2;
+    align-self:center;
+}
+
+.img-right img{
+    width:fit-content;
+}
+
+#grid6{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: center;
+}
+
+#grid6 img{
+    width: fit-content;
+}
+
+#grid6 ul{
+    list-style: none;
+}
+
+#grid6 ul li{
+    margin-bottom: 0.5em;
+}
+
+#last-part{
+    border-top: solid gainsboro;
+}
+
+#last-part ul{
+    display:flex;
+    list-style: none;
+    font-size: small;
+}
+
+#last-part ul li{
+    margin-right: 10px;
+}
+
+#subscribe{
+    border-left: solid gainsboro;
+}
+
+#border-top{
+    border-top:solid gainsboro;
+}
+
+footer {
+    height: 100vh;
+    font-size: small;
+}
+
+#grid-sidebar{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    column-gap: 2em;
+}
+
+#video{
+    grid-column-end: span 2;
 }
