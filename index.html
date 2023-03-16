@@ -22,44 +22,42 @@
             <!-- 20 nav items -->
     
     <section id="topbar">
-        <article id="top_1">
-            <div>
-            <p class="hamburger">|||</p>
-            <img src="./images/lupa.png" alt="magnifying glass">
-            </div>
-            <div>
-            <nav>
-                <ul>
-                    <li><a href="">U.S.</a></li>
-                    <li><a href="">INTERNATIONAL</a></li>
-                    <li><a href="">CANADA</a></li>
-                    <li><a href="">ESPAÑOL</a></li>
-                    <li><a href="">中文</a></li>
-                </ul>
-            </nav>
-            </div>
-            <div id="buttons">
-                <a href=""><button>SUBSCRIBE FOR 0.50/WEEK</button></a>
-                <a href=""><button>LOG IN</button></a>
-            </div>    
-        </article>
+            <article id="top_1">
+                <div id="hambg.search">
+                    <p class="hamburger">|||</p>
+                    <img src="./images/lupa.png" alt="magnifying glass">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="">U.S.</a></li>
+                        <li><a href="">INTERNATIONAL</a></li>
+                        <li><a href="">CANADA</a></li>
+                        <li><a href="">ESPAÑOL</a></li>
+                        <li><a href="">中文</a></li>
+                    </ul>
+                </nav>
+                <div id="buttons">
+                    <a href=""><button>SUBSCRIBE FOR 0.50/WEEK</button></a>
+                    <a href=""><button>LOG IN</button></a>
+                </div>    
+            </article>
 
-        <article id="top_2">
-            <ul>
-                <li id="date">Wednesday, March 15, 2023</li>
-                <li>Today's Paper</li>
-            </ul>
-            <h1> The New York Times</h1>
-            <ul>
-                <li id="weather">
-                    <img src="./images/sun.png" alt="sun">
-                    <p>14°C</p>
-                    <p>23°</p>
-                    <p>7°</p>
-                </li>
-                <li>S&P 500 +1.65%</li>
-            </ul>
-        </article>
+            <article id="top_2">
+                <ul>
+                    <li id="date">Wednesday, March 15, 2023</li>
+                    <li>Today's Paper</li>
+                </ul>
+                <h1> The New York Times</h1></div>
+                <ul>
+                    <li id="weather">
+                        <img src="./images/sun.png" alt="sun">
+                        <p id="actual-temp">14°C</p>
+                        <p>23°</p>
+                        <p>7°</p>
+                    </li>
+                    <li id="stock-exchange">S&P 500 +1.65%</li>
+                </ul>
+            </article>
         <article id="top_3">
              <nav>
                 <ul>
@@ -138,14 +136,15 @@
         <!-- end left content -->
 
     <section id="principal-grid">
+        <div>
         <article class="grid-news">
-            <div>
+            <div class="border-bottom">
             <h2>After Days of Panic, Midsize Banks See Stocks Rise</h2>
             <p>The specter of a billowing crisis over the banking industry appeared to ease, at least for the moment, as pressure lifted on midsize lenders.</p>
             <p>4 MIN READ</p>
             </div>
             <img src="./images/changes-in-the-stock-price.png" alt="Percentage change in the stock price of regional this year">
-            <div>
+            <div class="border-bottom">
                 <h3>Analysis: As banking turmoil became a flash point in America’s culture wars, conservative presidential hopefuls pounced.</h3>
                 <p>6 MIN READ</p>
             </div>
@@ -159,15 +158,16 @@
                 <p>Officials were initially unsure about the need for the measures they eventually announced to shore up the financial system, but changed their minds quickly.</p>
                 <p>7 MIN READ</p>
             </div>
+        </article>
 
             <div class="grid-news">
-                <div>
+                <div class="border-bottom">
                 <h2>Russian Warplane Hits American Drone Over Black Sea, U.S. Says</h2>
                 <p>The incident was the first known physical contact between the two militaries since the war in Ukraine began last year.</p>
                 <p>5 MIN READ</p>
                 </div>
                 <img src="./images/russian-warplane.png" alt="Russian Warplane">
-                <div>
+                <div class="border-bottom">
                     <h3>As Russian Shelling Intensifies, True Liberation Eludes a Ukrainian City</h3>
                     <p>Months after Ukrainian forces pushed Russian occupiers out of Kherson, the city remains very much a war zone.</p>
                     <p>3 MIN READ</p>
@@ -184,8 +184,10 @@
                     </ul>
                     <p>See more updates</p>
                 </div>
-        </article>
+            </div>
+        </div>
 
+    
     <!-- right sidebar -->
             <!-- 1st section grid 2 columns -->
                 <!-- 1st row -->
@@ -239,9 +241,10 @@
                     <h3>This dress survived for more than three centuries at the bottom of the sea.</h3>
                     <p>4 MIN READ</p>
                 </div>
+            </section>
             <div>
-                <h2>OPINION</h2>
-                <article class="img-right">
+                <h2>Opinion</h2>
+                <article id="img-avocado">
                     <div>
                     <p>JESSICA GROSE</p>
                     <h3>This Isn’t What Middle Age Was Supposed to Look Like</h3>
@@ -251,14 +254,14 @@
                 </article>
             </div>
             <div>
-                <article class="alexander">
+                <article>
                     <p>ALEXANDER CLAPP</p>
                     <h3>It’s a Spectacular Scandal, and a Warning to Europe</h3>
                     <p>5 MIN READ</p>
                 </article>
             </div>    
             <div>
-                <article class="img-right">
+                <article id="img-thomas">
                     <div>
                         <p>THOMAS L. FRIEDMAN</p>
                         <h3>Putin and Netanyahu Show Why Bad Things Happen to Bad Leaders</h3>
@@ -267,7 +270,6 @@
                         <img src="./images/thomas.png" alt="portrait of THOMAS L. FRIEDMAN">
                 </article>
             </div>
-            </section>
         </sidebar>
     </section>
         
@@ -350,15 +352,17 @@
                 <div id="subscribe">
                     <h3>SUBSCRIBE</h3>
                     <ul>
-                        <div id="subscribe-iamges">
+                        <div id="subscribe-images">
                             <li><img src="images/newspaper-icon.png" alt='newspaper icon'><a href="">Home Delivery</a></li>
                             <li><img src="images/nyt-logo.png" alt='The New York Times Logo'><a href="">Digital Subscriptions</a></li>
                             <li><img src="images/gameboard-icon.png" alt='gameboard icon'><a href="">Games</a></li>
                             <li><img src="images/cooking-icon.png" alt='cooking icon'><a href="">Cooking</a></li>
                         </div>
+                        <div id="below-subscribe">
                             <li><a href="">Politics</a></li>
                             <li><a href="">New York</a></li>
                             <li><a href="">Business</a></li>
+                        </div>
                         <div id="border-top">
                             <li><a href="">Tech</a></li>
                             <li><a href="">Science</a></li>
