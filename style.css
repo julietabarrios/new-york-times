@@ -180,13 +180,21 @@ button{
     margin-top: 10px;
     padding-top: 10px;
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 4fr 1fr;
     column-gap: 1em;
     border-top: black thin solid;
     margin-top: 2px;
+    border-bottom: 2px solid #e2e2e2;
+    margin-bottom: 2px;
+    padding-bottom: 10px;
 }
 
 /* left sections */
+
+#left-section{
+    border-right: thin solid rgb(188, 186, 186);
+    padding-right: 15px;
+}
 
 .grid-news{
     display: grid;
@@ -213,26 +221,61 @@ button{
 
 /* sidebar */
 
-#img-thomas, #img-avocado {
+
+#opinion{
+    border-top: thin solid black;
+    margin-top: 10px;
+    border-bottom: #e2e2e2 solid thin;
+    margin-bottom: 10px;
+}
+
+#opinion h2{
+    font-family: helvetica,arial,sans-serif;;
+}
+
+#img-avocado{
     display: flex;
     align-items: center;
 }
 
-#img-avocado{
-    width: 150px;
+#img-thomas{
+    display: flex;
+    align-items: center;
+    border-top: #e2e2e2 solid thin ;
+}
+
+#img-thomas img{
+    justify-content: end;
+    width:45px;
+}
+
+#img-avocado img{
+    justify-content: end;
+    width:135px;
 }
 
 #grid-sidebar{
     display:grid;
     grid-template-columns: repeat(2,100px);
     justify-content: center;
-    column-gap: 2em;
+    column-gap: 1em;
 }
 
 #video{
     grid-column-end: span 2;
+    border-bottom: #e2e2e2 solid thin;
+    margin-bottom: 10px;
 }
 
+#seaweed{
+    border-right: #e2e2e2 solid thin;
+    padding-right: 6px; ;
+}
+
+#dress{
+    margin-left:5px;
+
+}
 /* footer */
 
 #grid6{
@@ -306,8 +349,7 @@ button{
 
 footer {
     font-size: small;
-    border-top: rgb(106, 106, 106) double;
-    border-width: thin;
+    border-top: #e2e2e2 solid 1px;
     font-family: nyt-franklin, helvetica, arial, sans-serif;
 
 }
